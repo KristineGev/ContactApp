@@ -1,12 +1,13 @@
-package com.android.kristina.contactapplication;
+package com.android.kristina.contactapplication.item;
 
-public class ContactItem {
+public class Contact {
 
     private String name;
     private String number;
     private boolean isFavorite;
+    public Contact(){}
 
-    public ContactItem(String name, String number) {
+    public Contact(String name, String number) {
         this.name = name;
         this.number = number;
     }

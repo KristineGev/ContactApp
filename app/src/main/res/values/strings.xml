@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">ContactApplication</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="viktoria">Viktoria</string>
-    <string name="number">03146584351468413546</string>
+    <string name="number">031465843514684, 13566, 252165466,135463546,15452
+        54846</string>
+    <string name="tab_1_name">Contacts</string>
+    <string name="tab_2_name">Favorites</string>
 </resources>

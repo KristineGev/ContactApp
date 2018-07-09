@@ -14,6 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:text="@string/viktoria"
+        android:textSize="@dimen/text_size"
         />
     <TextView
         android:id="@+id/fav_contact_number"
@@ -25,6 +26,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fav_contact_name"
         android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/text_size"
         android:text="@string/number"
         />
 

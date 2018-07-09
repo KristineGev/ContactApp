@@ -1,17 +1,24 @@
-package com.android.kristina.contactapplication;
+package com.android.kristina.contactapplication.viewHolder;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.kristina.contactapplication.R;
+
 public class ViewHolderContacts extends RecyclerView.ViewHolder {
-    TextView mNameText;
-    TextView mNumberText;
-    ImageView mStar;
-    boolean isFavorite = false;
+    private TextView mNameText;
+    private TextView mNumberText;
+    private ImageView mStar;
+    private boolean isFavorite = false;
     private OnContactSelectedListener onContactSelectedListener;
 
+    public ViewHolderContacts(LayoutInflater inflater, ViewGroup parent) {
+        super(inflater.inflate(R.layout.contact_item_view, parent, false));
+    }
 
     public void setOnContactSelectedListener(OnContactSelectedListener onContactSelectedListener) {
         this.onContactSelectedListener = onContactSelectedListener;
@@ -50,19 +57,17 @@ public class ViewHolderContacts extends RecyclerView.ViewHolder {
     }
 
 
-
-
     View.OnClickListener onStarClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(onContactSelectedListener!=null){
-                onContactSelectedListener.onSelectContact(getAdapterPosition(),isFavorite);
+            if (onContactSelectedListener != null) {
+                onContactSelectedListener.onSelectContact(getAdapterPosition(), isFavorite);
 
             }
         }
     };
 
-    public interface OnContactSelectedListener{
+    public interface OnContactSelectedListener {
         void onSelectContact(int position, boolean isFavorite);
     }
 }

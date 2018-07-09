@@ -4,5 +4,6 @@
     <dimen name="contact_margin_top">5dp</dimen>
     <dimen name="contact_margin_end">10dp</dimen>
     <dimen name="padding">5dp</dimen>
+    <dimen name="text_size">25sp</dimen>
 
     </resources>
